@@ -1,4 +1,4 @@
-namespace Be.Vlaanderen.Basisregisters.AspNetCore.Mvc.Middleware.AddVersionHeader.Tests
+namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
 {
     using System.Linq;
     using System.Threading.Tasks;

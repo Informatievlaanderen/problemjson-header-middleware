@@ -1,4 +1,4 @@
-namespace Be.Vlaanderen.Basisregisters.AspNetCore.Mvc.Middleware
+namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader
 {
     using System;
     using System.Linq;
