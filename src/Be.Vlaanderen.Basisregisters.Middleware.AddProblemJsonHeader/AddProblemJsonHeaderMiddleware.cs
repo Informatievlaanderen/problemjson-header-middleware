@@ -1,10 +1,10 @@
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-
 namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader
 {
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Http;
+
     /// <summary>
     /// Add 'application/problem+json' to the request's Accept header if the request's Accept header contains 'application/ld+json'.
     /// </summary>

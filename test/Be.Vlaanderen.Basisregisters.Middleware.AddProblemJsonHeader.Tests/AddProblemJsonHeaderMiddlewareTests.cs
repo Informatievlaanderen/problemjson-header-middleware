@@ -1,11 +1,11 @@
-using System.Linq;
-using System.Threading.Tasks;
-using FluentAssertions;
-using Microsoft.AspNetCore.Http;
-using Xunit;
-
 namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
 {
+    using System.Linq;
+    using System.Threading.Tasks;
+    using FluentAssertions;
+    using Microsoft.AspNetCore.Http;
+    using Xunit;
+
     public class AddProblemJsonHeaderMiddlewareTests
     {
         [Fact]
