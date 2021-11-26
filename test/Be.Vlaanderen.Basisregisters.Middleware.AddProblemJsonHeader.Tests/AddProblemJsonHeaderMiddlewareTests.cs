@@ -1,11 +1,11 @@
-namespace Be.Vlaanderen.Basisregisters.AspNetCore.Mvc.Middleware.AddVersionHeader.Tests
-{
-    using System.Linq;
-    using System.Threading.Tasks;
-    using FluentAssertions;
-    using Microsoft.AspNetCore.Http;
-    using Xunit;
+using System.Linq;
+using System.Threading.Tasks;
+using FluentAssertions;
+using Microsoft.AspNetCore.Http;
+using Xunit;
 
+namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
+{
     public class AddProblemJsonHeaderMiddlewareTests
     {
         [Fact]
