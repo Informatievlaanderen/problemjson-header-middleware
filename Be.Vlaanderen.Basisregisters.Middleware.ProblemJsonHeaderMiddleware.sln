@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C6261FB3-9248-4297-973B-B5D35EBC767A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.fsx = build.fsx
+		build.sh = build.sh
+		.github\CODEOWNERS = .github\CODEOWNERS
+		global.json = global.json
+		LICENSE = LICENSE
+		paket.dependencies = paket.dependencies
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{74478870-6E14-4173-A97C-ABD060A03157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C0249F13-09BB-4BA9-823A-584F3F44D2F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader", "src\Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader\Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.csproj", "{913A75B4-5C41-4BE5-A5F1-73417D670B57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests", "test\Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests\Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests.csproj", "{D7E2DB59-2771-4CE1-BF91-B3710ACC9C71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{913A75B4-5C41-4BE5-A5F1-73417D670B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913A75B4-5C41-4BE5-A5F1-73417D670B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913A75B4-5C41-4BE5-A5F1-73417D670B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913A75B4-5C41-4BE5-A5F1-73417D670B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E2DB59-2771-4CE1-BF91-B3710ACC9C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E2DB59-2771-4CE1-BF91-B3710ACC9C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E2DB59-2771-4CE1-BF91-B3710ACC9C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E2DB59-2771-4CE1-BF91-B3710ACC9C71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{913A75B4-5C41-4BE5-A5F1-73417D670B57} = {74478870-6E14-4173-A97C-ABD060A03157}
+		{D7E2DB59-2771-4CE1-BF91-B3710ACC9C71} = {C0249F13-09BB-4BA9-823A-584F3F44D2F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F186842-5D32-4227-A148-24D734BB75EE}
+	EndGlobalSection
+EndGlobal
