@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.0...v1.0.1) (2021-11-30)
+
+
+### Bug Fixes
+
+* remove .net dependencies ([13db130](https://github.com/informatievlaanderen/problemjson-header-middleware/commit/13db130490b1d40331a982298d9649cb68d2f230))
+
 # 1.0.0 (2021-11-26)
 
 
