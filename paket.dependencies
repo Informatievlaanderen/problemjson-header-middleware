@@ -2,8 +2,7 @@ framework: net5.0
 source https://api.nuget.org/v3/index.json
 
 // PRODUCTION STUFF
-nuget Microsoft.AspNetCore.Http 2.2.2
-nuget Microsoft.AspNetCore.Http.Extensions 2.2.0
+//nuget Microsoft.AspNetCore.Http 2.2.2
 
 // VBR STUFF
 nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 5.0.3
