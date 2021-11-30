@@ -23,9 +23,9 @@ namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader
 
         public Task Invoke(HttpContext context)
         {
-            var acceptHeader = context.Request.GetTypedHeaders().Accept;
-            if (acceptHeader.Any(x => x.MediaType.Value.Contains(JsonLd, StringComparison.InvariantCultureIgnoreCase))
-                && !acceptHeader.Any(x => x.MediaType.Value.Contains(JsonProblem, StringComparison.InvariantCultureIgnoreCase)))
+            var acceptHeader = context.Request.Headers[HeaderName];
+            if (acceptHeader.Any(x => x.Contains(JsonLd, StringComparison.InvariantCultureIgnoreCase))
+                && !acceptHeader.Any(x => x.Contains(JsonProblem, StringComparison.InvariantCultureIgnoreCase)))
             {
                 context.Request.Headers[HeaderName] = $"{context.Request.Headers[HeaderName]};{JsonProblem}";
             }
