@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.1...v1.0.2) (2021-11-30)
+
+
+### Bug Fixes
+
+* correct seperator for accept types ([f512138](https://github.com/informatievlaanderen/problemjson-header-middleware/commit/f512138cc4a325af438f7f4ecd35585dd92992f9))
+
 ## [1.0.1](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.0...v1.0.1) (2021-11-30)
 
 
