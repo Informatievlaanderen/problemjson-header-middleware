@@ -27,7 +27,7 @@ namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader
             if (acceptHeader.Any(x => x.Contains(JsonLd, StringComparison.InvariantCultureIgnoreCase))
                 && !acceptHeader.Any(x => x.Contains(JsonProblem, StringComparison.InvariantCultureIgnoreCase)))
             {
-                context.Request.Headers[HeaderName] = $"{context.Request.Headers[HeaderName]};{JsonProblem}";
+                context.Request.Headers[HeaderName] = $"{context.Request.Headers[HeaderName]},{JsonProblem}";
             }
             return _next(context);
         }

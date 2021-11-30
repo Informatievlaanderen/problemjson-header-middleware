@@ -19,7 +19,10 @@ namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
 
             context.Request.GetTypedHeaders().Accept
                 .Select(x => x.MediaType.Value)
-                .Should().Contain("application/problem+json");
+                .Should()
+                .Contain("application/problem+json")
+                .And
+                .Contain("application/ld+json");
         }
 
         [Fact]
@@ -33,7 +36,8 @@ namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
 
             context.Request.GetTypedHeaders().Accept
                 .Select(x => x.MediaType.Value)
-                .Should().NotContain("application/problem+json");
+                .Should()
+                .NotContain("application/problem+json");
         }
     }
 }
