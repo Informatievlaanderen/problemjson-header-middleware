@@ -1,6 +1,6 @@
 {
   "name": "problemjson-header-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Middleware component which adds 'application/problem+json' to the request's Accept header if that header contains 'application/ld+json'.",
   "author": "Basisregisters Vlaanderen",
   "license": "MIT",

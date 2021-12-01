@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.2...v1.0.3) (2021-12-01)
+
+
+### Bug Fixes
+
+* await next ([27fc244](https://github.com/informatievlaanderen/problemjson-header-middleware/commit/27fc2448d541c6921df532dbb80a1ea10946f76a))
+
 ## [1.0.2](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.1...v1.0.2) (2021-11-30)
 
 
