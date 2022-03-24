@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.3...v2.0.0) (2022-03-24)
+
+
+### Features
+
+* move to dotnet 6.0.3 ([4cf024e](https://github.com/informatievlaanderen/problemjson-header-middleware/commit/4cf024eced1833886f1dbd482bdcfeb0b6bd21a0))
+
+
+### BREAKING CHANGES
+
+* move to dotnet 6.0.3
+
 ## [1.0.3](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v1.0.2...v1.0.3) (2021-12-01)
 
 
