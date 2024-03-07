@@ -1,4 +1,4 @@
-# Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader [![Build Status](https://github.com/Informatievlaanderen/problemjson-header-middleware/workflows/CI/badge.svg)](https://github.com/Informatievlaanderen/problemjson-header-middleware/actions)
+# Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader [![Build Status](https://github.com/Informatievlaanderen/problemjson-header-middleware/workflows/Build/badge.svg)](https://github.com/Informatievlaanderen/problemjson-header-middleware/actions)
 
 ## Goal
 
