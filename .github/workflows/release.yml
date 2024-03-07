@@ -60,9 +60,9 @@ jobs:
     needs: [ set-release-version ]
     if: ${{ (github.repository_owner == 'Informatievlaanderen') && (needs.set-release-version.outputs.version != 'none') }}
     with:
-      pack-file: Be.Vlaanderen.Basisregisters.Middleware.ProblemJsonHeaderMiddleware 
-      test-project: Be.Vlaanderen.Basisregisters.Middleware.ProblemJsonHeaderMiddleware.Tests
-      build-project: Be.Vlaanderen.Basisregisters.Middleware.ProblemJsonHeaderMiddleware
+      pack-file: Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader 
+      test-project: Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
+      build-project: Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader
       semver: ${{ needs.set-release-version.outputs.version }}
       dotnet-version: ${{ vars.VBR_DOTNET_VERSION_8 }}
     secrets: inherit
@@ -130,7 +130,7 @@ jobs:
       uses: actions/download-artifact@v4
       continue-on-error: false
       with:
-        name: nuget-Be.Vlaanderen.Basisregisters.Middleware.ProblemJsonHeaderMiddleware-${{ needs.set-release-version.outputs.version }}
+        name: nuget-Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader-${{ needs.set-release-version.outputs.version }}
         path: dist/nuget/
 
     - name: Run Semantic Release
@@ -177,13 +177,13 @@ jobs:
     - name: Download NuGet package
       uses: actions/download-artifact@v4
       with:
-        name: nuget-Be.Vlaanderen.Basisregisters.Middleware.ProblemJsonHeaderMiddleware-${{ needs.release.outputs.version }}
+        name: nuget-Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader-${{ needs.release.outputs.version }}
         path: ~/
 
     - name: Publish packages to NuGet
       shell: bash
       run: |
-        dotnet nuget push ~/Be.Vlaanderen.Basisregisters.Middleware.ProblemJsonHeaderMiddleware.$SEMVER.nupkg --source nuget.org --api-key $NUGET_API_KEY
+        dotnet nuget push ~/Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.$SEMVER.nupkg --source nuget.org --api-key $NUGET_API_KEY
       env:
         SEMVER: ${{  needs.release.outputs.version }}
         WORKSPACE: ${{ github.workspace }}
