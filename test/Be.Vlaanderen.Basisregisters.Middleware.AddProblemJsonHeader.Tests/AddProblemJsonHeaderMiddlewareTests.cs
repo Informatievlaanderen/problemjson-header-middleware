@@ -11,9 +11,9 @@ namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
         [Fact]
         public async Task AddsProblemJsonToRequestHeaders()
         {
-            var middleware = new AddProblemJsonHeaderMiddleware(innerContext => Task.CompletedTask);
+            var middleware = new AddProblemJsonHeaderMiddleware(_ => Task.CompletedTask);
             var context = new DefaultHttpContext();
-            context.Request.Headers.Add("Accept", "application/ld+json");
+            context.Request.Headers.Append("Accept", "application/ld+json");
 
             await middleware.Invoke(context);
 
@@ -28,9 +28,9 @@ namespace Be.Vlaanderen.Basisregisters.Middleware.AddProblemJsonHeader.Tests
         [Fact]
         public async Task DoesNotAddProblemJsonToRequestHeaders()
         {
-            var middleware = new AddProblemJsonHeaderMiddleware(innerContext => Task.CompletedTask);
+            var middleware = new AddProblemJsonHeaderMiddleware(_ => Task.CompletedTask);
             var context = new DefaultHttpContext();
-            context.Request.Headers.Add("Accept", "application/json");
+            context.Request.Headers.Append("Accept", "application/json");
 
             await middleware.Invoke(context);
 
