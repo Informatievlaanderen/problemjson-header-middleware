@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v3.0.0...v4.0.0) (2025-04-04)
+
+
+### Code Refactoring
+
+* use renovate and nuget + update pipeline ([144532f](https://github.com/informatievlaanderen/problemjson-header-middleware/commit/144532ff46e361853bdd8949fa17a15423b0e07f))
+
+
+### BREAKING CHANGES
+
+* update to dotnet 9
+
 # [3.0.0](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v2.0.0...v3.0.0) (2024-03-07)
 
 
