@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v4.0.0...v4.1.0) (2026-06-02)
+
+
+### Features
+
+* update packages ([fa4e21d](https://github.com/informatievlaanderen/problemjson-header-middleware/commit/fa4e21d3334f106bd6d953d1c3618fe90abed46a))
+
 # [4.0.0](https://github.com/informatievlaanderen/problemjson-header-middleware/compare/v3.0.0...v4.0.0) (2025-04-04)
 
 
